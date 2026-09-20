@@ -116,10 +116,6 @@ Close your fist to grab a window, open your hand at another device to drop it. S
 
 <img width="80%" src="https://streak-stats.demolab.com?user=auroraeye-dev&hide_border=true&background=0b1220&ring=38e0c8&fire=a78bfa&currStreakLabel=38e0c8&sideLabels=9fb3cd&currStreakNum=dbe6f5&sideNums=dbe6f5&dates=55617a" alt="Streak">
 
-<br><br>
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=auroraeye-dev&bg_color=0b1220&color=9fb3cd&line=38e0c8&point=a78bfa&area=true&area_color=38e0c8&hide_border=true&custom_title=Contribution%20activity" alt="Activity graph">
-
 </div>
 
 <br>
