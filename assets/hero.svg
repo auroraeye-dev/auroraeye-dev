@@ -1,0 +1,282 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="576" viewBox="0 0 1000 576" fill="none" role="img" aria-label="Satvik Mishra — AI Engineer · building in public">
+<defs>
+<linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+  <stop id="g1" offset="0%" stop-color="#38e0c8"/>
+  <stop offset="50%" stop-color="#4aa8ff"/>
+  <stop id="g2" offset="100%" stop-color="#a78bfa"/>
+</linearGradient>
+<linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1">
+  <stop id="e1" offset="0%" stop-color="#38e0c8" stop-opacity=".55"/>
+  <stop offset="50%" stop-color="#1b2740" stop-opacity=".6"/>
+  <stop id="e2" offset="100%" stop-color="#a78bfa" stop-opacity=".55"/>
+</linearGradient>
+<linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#0d1526"/><stop offset="100%" stop-color="#080d18"/>
+</linearGradient>
+<linearGradient id="asciiGrad" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0%" stop-color="#7fe7ff"/><stop offset="55%" stop-color="#38e0c8"/>
+  <stop offset="100%" stop-color="#3f7fd1"/>
+</linearGradient>
+<linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#38e0c8" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#38e0c8" stop-opacity=".18"/>
+</linearGradient>
+<filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+  <feGaussianBlur stdDeviation="60"/></filter>
+<filter id="nameGlow" x="-25%" y="-60%" width="150%" height="220%">
+  <feGaussianBlur stdDeviation="7" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#16203a"/></pattern>
+</defs>
+<style>
+text{font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,'Liberation Mono',monospace}
+.chrome{font-size:11.5px;fill:#63728c;letter-spacing:.4px}
+.dimtxt{font-size:13px;fill:#64748b}
+.name{font-size:31px;font-weight:700;fill:url(#nameGrad);letter-spacing:-.4px;
+      filter:url(#nameGlow)}
+.prompt{font-size:16px;fill:#38e0c8}
+.role{font-size:15.0px;fill:#9fb3cd}
+.key{font-size:12.5px;fill:#55617a;letter-spacing:.5px}
+.val{font-size:13px;fill:#c7d2e4}
+.sub{font-size:11.5px;fill:#6b7a95}
+.section{font-size:11px;fill:#55617a;letter-spacing:2.2px}
+.chiptxt{font-size:12.0px;fill:#b9cbe4}
+.ico{font-size:12px;font-weight:700;fill:#38e0c8}
+.sociallbl{font-size:10px;fill:#55617a}
+.ascii{font-size:10.942028985507248px;fill:url(#asciiGrad);opacity:0;
+       animation:rev .5s ease-out both,flick 7s ease-in-out infinite}
+
+@keyframes rev{from{opacity:0;transform:translateX(-6px)}to{opacity:.95;transform:none}}
+@keyframes flick{0%,100%{opacity:.95}47%{opacity:.68}53%{opacity:1}}
+.rv{opacity:0;animation:rv .7s cubic-bezier(.2,.7,.3,1) both}
+@keyframes rv{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.chip{opacity:0;animation:chip .5s cubic-bezier(.2,.8,.3,1) both}
+@keyframes chip{from{opacity:0;transform:translateY(6px) scale(.94)}
+                to{opacity:1;transform:none}}
+.caret{animation:blink 1.05s steps(1,end) infinite}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:.05}}
+.dot{animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+.orb{animation:orb 4s ease-in-out infinite}
+@keyframes orb{0%,100%{stroke:#25374f}50%{stroke:#38e0c8}}
+.scan{animation:scan 5.5s cubic-bezier(.45,0,.55,1) infinite;opacity:.5}
+@keyframes scan{0%{transform:translateY(-70px)}100%{transform:translateY(512px)}}
+.scanline{animation:scan2 5.5s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes scan2{0%{transform:translateY(0)}100%{transform:translateY(512px)}}
+#g1{animation:hue 9s linear infinite}
+@keyframes hue{0%{stop-color:#38e0c8}33%{stop-color:#4aa8ff}
+               66%{stop-color:#a78bfa}100%{stop-color:#38e0c8}}
+#g2{animation:hue2 9s linear infinite}
+@keyframes hue2{0%{stop-color:#a78bfa}33%{stop-color:#38e0c8}
+                66%{stop-color:#4aa8ff}100%{stop-color:#a78bfa}}
+#e1{animation:hue 11s linear infinite}
+#e2{animation:hue2 11s linear infinite}
+
+@keyframes tw0{
+ 0%,0.000%{width:0px;animation-timing-function:steps(32,end)}
+ 6.000%,15.778%{width:288.0px;animation-timing-function:steps(32,end)}
+ 18.889%,100%{width:0px}
+}
+@keyframes tc0{
+ 0%,0.000%{transform:translateX(0);animation-timing-function:steps(32,end)}
+ 6.000%,15.778%{transform:translateX(288.0px);animation-timing-function:steps(32,end)}
+ 18.889%,100%{transform:translateX(0)}
+}
+@keyframes tv0{
+ 0%,0.000%{opacity:0}
+ 0.010%,19.778%{opacity:1}
+ 19.788%,100%{opacity:0}
+}
+#clip0 rect{animation:tw0 22.5s infinite}
+#cur0{animation:tc0 22.5s infinite}
+#ph0{animation:tv0 22.5s infinite}
+@keyframes tw1{
+ 0%,20.000%{width:0px;animation-timing-function:steps(31,end)}
+ 26.000%,35.778%{width:279.0px;animation-timing-function:steps(31,end)}
+ 38.889%,100%{width:0px}
+}
+@keyframes tc1{
+ 0%,20.000%{transform:translateX(0);animation-timing-function:steps(31,end)}
+ 26.000%,35.778%{transform:translateX(279.0px);animation-timing-function:steps(31,end)}
+ 38.889%,100%{transform:translateX(0)}
+}
+@keyframes tv1{
+ 0%,20.000%{opacity:0}
+ 20.010%,39.778%{opacity:1}
+ 39.788%,100%{opacity:0}
+}
+#clip1 rect{animation:tw1 22.5s infinite}
+#cur1{animation:tc1 22.5s infinite}
+#ph1{animation:tv1 22.5s infinite}
+@keyframes tw2{
+ 0%,40.000%{width:0px;animation-timing-function:steps(34,end)}
+ 46.000%,55.778%{width:306.0px;animation-timing-function:steps(34,end)}
+ 58.889%,100%{width:0px}
+}
+@keyframes tc2{
+ 0%,40.000%{transform:translateX(0);animation-timing-function:steps(34,end)}
+ 46.000%,55.778%{transform:translateX(306.0px);animation-timing-function:steps(34,end)}
+ 58.889%,100%{transform:translateX(0)}
+}
+@keyframes tv2{
+ 0%,40.000%{opacity:0}
+ 40.010%,59.778%{opacity:1}
+ 59.788%,100%{opacity:0}
+}
+#clip2 rect{animation:tw2 22.5s infinite}
+#cur2{animation:tc2 22.5s infinite}
+#ph2{animation:tv2 22.5s infinite}
+@keyframes tw3{
+ 0%,60.000%{width:0px;animation-timing-function:steps(37,end)}
+ 66.000%,75.778%{width:333.0px;animation-timing-function:steps(37,end)}
+ 78.889%,100%{width:0px}
+}
+@keyframes tc3{
+ 0%,60.000%{transform:translateX(0);animation-timing-function:steps(37,end)}
+ 66.000%,75.778%{transform:translateX(333.0px);animation-timing-function:steps(37,end)}
+ 78.889%,100%{transform:translateX(0)}
+}
+@keyframes tv3{
+ 0%,60.000%{opacity:0}
+ 60.010%,79.778%{opacity:1}
+ 79.788%,100%{opacity:0}
+}
+#clip3 rect{animation:tw3 22.5s infinite}
+#cur3{animation:tc3 22.5s infinite}
+#ph3{animation:tv3 22.5s infinite}
+@keyframes tw4{
+ 0%,80.000%{width:0px;animation-timing-function:steps(41,end)}
+ 86.000%,95.778%{width:369.0px;animation-timing-function:steps(41,end)}
+ 98.889%,100%{width:0px}
+}
+@keyframes tc4{
+ 0%,80.000%{transform:translateX(0);animation-timing-function:steps(41,end)}
+ 86.000%,95.778%{transform:translateX(369.0px);animation-timing-function:steps(41,end)}
+ 98.889%,100%{transform:translateX(0)}
+}
+@keyframes tv4{
+ 0%,80.000%{opacity:0}
+ 80.010%,99.778%{opacity:1}
+ 99.788%,100%{opacity:0}
+}
+#clip4 rect{animation:tw4 22.5s infinite}
+#cur4{animation:tc4 22.5s infinite}
+#ph4{animation:tv4 22.5s infinite}
+</style>
+<rect width="1000" height="576" rx="20" fill="#05070d"/>
+<rect width="1000" height="576" rx="20" fill="url(#dots)" opacity=".5"/>
+<circle cx="60" cy="40" r="220" fill="#38e0c8" opacity=".07" filter="url(#soft)"/>
+<circle cx="920" cy="576" r="240" fill="#a78bfa" opacity=".08" filter="url(#soft)"/>
+<rect x="1" y="1" width="998" height="574" rx="20" fill="none" stroke="url(#edgeGrad)" stroke-width="1.5"/>
+<rect x="18" y="18" width="330" height="540" rx="12" fill="url(#panelGrad)" stroke="#1e2a44"/>
+<path d="M18 30 a12 12 0 0 1 12 -12 h306 a12 12 0 0 1 12 12 v16 h-330 z" fill="#111a2e"/>
+<line x1="18" y1="46" x2="348" y2="46" stroke="#1e2a44"/>
+<circle cx="36" cy="32.0" r="4.5" fill="#ff5f57" class="dot" style="animation-delay:0.0s"/>
+<circle cx="51" cy="32.0" r="4.5" fill="#febc2e" class="dot" style="animation-delay:0.35s"/>
+<circle cx="66" cy="32.0" r="4.5" fill="#28c840" class="dot" style="animation-delay:0.7s"/>
+<text x="183.0" y="36.0" class="chrome" text-anchor="middle">portrait.ascii</text>
+<clipPath id="asciiClip"><rect x="20" y="46" width="326" height="510"/></clipPath>
+<g clip-path="url(#asciiClip)">
+<text x="32" y="71.7" class="ascii" style="animation-delay:0.0s,0.0s" xml:space="preserve">  :.. .   ..      .       .     .         .</text>
+<text x="32" y="87.9" class="ascii" style="animation-delay:0.045s,0.045s" xml:space="preserve"> .    . :.  .    :   ..  .      . .</text>
+<text x="32" y="104.1" class="ascii" style="animation-delay:0.09s,0.09s" xml:space="preserve">  ..  .  .     . .:. =--+=           .     : .</text>
+<text x="32" y="120.3" class="ascii" style="animation-delay:0.135s,0.135s" xml:space="preserve"> .    . . ...   . ==++=+=+==+ . . .   .</text>
+<text x="32" y="136.5" class="ascii" style="animation-delay:0.18s,0.18s" xml:space="preserve">.     : . .    :==+*+*++*++++==    ..  .  . .</text>
+<text x="32" y="152.7" class="ascii" style="animation-delay:0.225s,0.225s" xml:space="preserve">.:.:.    : : : ++=+*#**++*+++-+=        . .</text>
+<text x="32" y="168.9" class="ascii" style="animation-delay:0.27s,0.27s" xml:space="preserve"> : .      .   .+=+****#*#+**=++=    ..  ...</text>
+<text x="32" y="185.1" class="ascii" style="animation-delay:0.315s,0.315s" xml:space="preserve">         . .. ==***##*%#%***++==-       .:..</text>
+<text x="32" y="201.3" class="ascii" style="animation-delay:0.36s,0.36s" xml:space="preserve">  . :.   :. : ++***#%%%#%%#***=--       .</text>
+<text x="32" y="217.5" class="ascii" style="animation-delay:0.405s,0.405s" xml:space="preserve">     ....  .  +*++*#%#%@####+==+-  .  :.   .</text>
+<text x="32" y="233.7" class="ascii" style="animation-delay:0.45s,0.45s" xml:space="preserve">.       :    .==+#*#%%%###**+====..  .  .  .</text>
+<text x="32" y="249.9" class="ascii" style="animation-delay:0.495s,0.495s" xml:space="preserve">     . .    .:-=++**#######+++=-=            .</text>
+<text x="32" y="266.1" class="ascii" style="animation-delay:0.54s,0.54s" xml:space="preserve">.     :   ..   ++++****+#*++++=-   .    .   .</text>
+<text x="32" y="282.3" class="ascii" style="animation-delay:0.585s,0.585s" xml:space="preserve">. :  .        . +=*++*+**+++==-      . .  .</text>
+<text x="32" y="298.5" class="ascii" style="animation-delay:0.63s,0.63s" xml:space="preserve">.    . .    .    =-++#+#**+=--....: .. .  ..</text>
+<text x="32" y="314.7" class="ascii" style="animation-delay:0.675s,0.675s" xml:space="preserve">....        .       +#+*++=      . .</text>
+<text x="32" y="330.9" class="ascii" style="animation-delay:0.72s,0.72s" xml:space="preserve">      . . ..      .  ***++.    .  .   . .</text>
+<text x="32" y="347.1" class="ascii" style="animation-delay:0.765s,0.765s" xml:space="preserve">..    .   . .  .==+=+*+***++--=.  . . . .   .</text>
+<text x="32" y="363.3" class="ascii" style="animation-delay:0.81s,0.81s" xml:space="preserve">            ====+=+==++++*=======-=. .. . .</text>
+<text x="32" y="379.5" class="ascii" style="animation-delay:0.855s,0.855s" xml:space="preserve"> .   .   -====++=++++*++*=++-==+=+=-=:</text>
+<text x="32" y="395.7" class="ascii" style="animation-delay:0.9s,0.9s" xml:space="preserve">      -=+=-===++++*++++++=+++==-++=-==--:  . .</text>
+<text x="32" y="411.9" class="ascii" style="animation-delay:0.945s,0.945s" xml:space="preserve"> . ..----+=+=+==++*+=****=++++=++--==--=:-..</text>
+<text x="32" y="428.1" class="ascii" style="animation-delay:0.99s,0.99s" xml:space="preserve">    =--==++++==*+*+++*++*++=*++==++-+=-=---  .</text>
+<text x="32" y="444.3" class="ascii" style="animation-delay:1.035s,1.035s" xml:space="preserve">.  ==-=+==++++++++*+*+*++*++++=+==--+=------ .</text>
+<text x="32" y="460.5" class="ascii" style="animation-delay:1.08s,1.08s" xml:space="preserve"> .----==++++++=+++**+*++*+**=+=+==+==--:-----</text>
+<text x="32" y="476.7" class="ascii" style="animation-delay:1.125s,1.125s" xml:space="preserve">  ======-+=+=++**+++#+++*+*++*+===-=-=----:--</text>
+<text x="32" y="492.9" class="ascii" style="animation-delay:1.17s,1.17s" xml:space="preserve">  =----==-++=+++++**+++*++*++=+++++--==--:---.</text>
+<text x="32" y="509.1" class="ascii" style="animation-delay:1.215s,1.215s" xml:space="preserve">  =:-=-=-=+-+=+=**=++****+*+=+==+---=---=:=-:.</text>
+<text x="32" y="525.3" class="ascii" style="animation-delay:1.26s,1.26s" xml:space="preserve">  :::---=--+===+==+=++++=*===+++=+--=------::</text>
+<text x="32" y="541.5" class="ascii" style="animation-delay:1.305s,1.305s" xml:space="preserve">   ::==:=-====----=-====+++-=+=====-==---::-</text>
+<rect x="20" y="46" width="326" height="64" fill="url(#scanGrad)" class="scan"/>
+<rect x="20" y="46" width="326" height="1.2" fill="#38e0c8" opacity=".55" class="scanline"/>
+</g>
+<rect x="362" y="18" width="620" height="540" rx="12" fill="url(#panelGrad)" stroke="#1e2a44"/>
+<path d="M362 30 a12 12 0 0 1 12 -12 h596 a12 12 0 0 1 12 12 v16 h-620 z" fill="#111a2e"/>
+<line x1="362" y1="46" x2="982" y2="46" stroke="#1e2a44"/>
+<circle cx="380" cy="32.0" r="4.5" fill="#ff5f57" class="dot" style="animation-delay:0.0s"/>
+<circle cx="395" cy="32.0" r="4.5" fill="#febc2e" class="dot" style="animation-delay:0.35s"/>
+<circle cx="410" cy="32.0" r="4.5" fill="#28c840" class="dot" style="animation-delay:0.7s"/>
+<text x="672.0" y="36.0" class="chrome" text-anchor="middle">~/whoami.sh</text>
+<text x="386" y="76" class="dimtxt rv" style="animation-delay:.15s">Hi</text>
+<text x="386" y="118" class="name rv" style="animation-delay:.3s">I&#8217;m Satvik Mishra</text>
+<text x="386" y="152" class="prompt">&#8250;</text>
+<clipPath id="clip0"><rect x="404" y="137.0" width="0" height="22"/></clipPath>
+<g id="ph0" opacity="0"><text x="404" y="152" class="role" clip-path="url(#clip0)" xml:space="preserve">AI Engineer · building in public</text><rect id="cur0" x="404" y="140" width="8.5" height="16" rx="1.5" fill="#38e0c8" class="caret"/></g>
+<clipPath id="clip1"><rect x="404" y="137.0" width="0" height="22"/></clipPath>
+<g id="ph1" opacity="0"><text x="404" y="152" class="role" clip-path="url(#clip1)" xml:space="preserve">LLM · RAG · Multi-Agent Systems</text><rect id="cur1" x="404" y="140" width="8.5" height="16" rx="1.5" fill="#38e0c8" class="caret"/></g>
+<clipPath id="clip2"><rect x="404" y="137.0" width="0" height="22"/></clipPath>
+<g id="ph2" opacity="0"><text x="404" y="152" class="role" clip-path="url(#clip2)" xml:space="preserve">Founder &amp; sole dev @ basaltarch.io</text><rect id="cur2" x="404" y="140" width="8.5" height="16" rx="1.5" fill="#38e0c8" class="caret"/></g>
+<clipPath id="clip3"><rect x="404" y="137.0" width="0" height="22"/></clipPath>
+<g id="ph3" opacity="0"><text x="404" y="152" class="role" clip-path="url(#clip3)" xml:space="preserve">Quant research · stochastic modelling</text><rect id="cur3" x="404" y="140" width="8.5" height="16" rx="1.5" fill="#38e0c8" class="caret"/></g>
+<clipPath id="clip4"><rect x="404" y="137.0" width="0" height="22"/></clipPath>
+<g id="ph4" opacity="0"><text x="404" y="152" class="role" clip-path="url(#clip4)" xml:space="preserve">Production &amp; Industrial Engineering @ DTU</text><rect id="cur4" x="404" y="140" width="8.5" height="16" rx="1.5" fill="#38e0c8" class="caret"/></g>
+<g class="rv" style="animation-delay:0.50s">
+<text x="386" y="196" class="key">location</text>
+<text x="502" y="196" class="val">New Delhi, India</text>
+</g>
+<g class="rv" style="animation-delay:0.60s">
+<text x="386" y="223" class="key">education</text>
+<text x="502" y="223" class="val">B.Tech Production &amp; Industrial Eng · DTU &#x27;28</text>
+</g>
+<g class="rv" style="animation-delay:0.70s">
+<text x="386" y="250" class="key">focus</text>
+<text x="502" y="250" class="val">AI Engineer | LLM · RAG · Agents · Quant</text>
+<text x="502" y="269" class="sub">Python · TypeScript · AWS · Docker · Databricks</text>
+</g>
+<g class="rv" style="animation-delay:0.80s">
+<text x="386" y="296" class="key">building</text>
+<text x="502" y="296" class="val">basaltarch.io — architecture + compliance</text>
+</g>
+<g class="rv" style="animation-delay:0.90s">
+<text x="386" y="323" class="key">writing</text>
+<text x="502" y="323" class="val">engrXiv preprint · graph-DB benchmark, 2026</text>
+</g>
+<g class="rv" style="animation-delay:1.00s">
+<text x="386" y="350" class="key">email</text>
+<text x="502" y="350" class="val">satvikmishra04@gmail.com</text>
+</g>
+<text x="386" y="383" class="section rv" style="animation-delay:1.15s">SKILLS</text>
+<g class="chip" style="animation-delay:1.25s"><rect x="386.0" y="395" width="65.2" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="418.6" y="413" class="chiptxt" text-anchor="middle">Python</text></g>
+<g class="chip" style="animation-delay:1.30s"><rect x="459.2" y="395" width="72.4" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="495.4" y="413" class="chiptxt" text-anchor="middle">PyTorch</text></g>
+<g class="chip" style="animation-delay:1.36s"><rect x="539.6" y="395" width="86.8" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="583.0" y="413" class="chiptxt" text-anchor="middle">LangChain</text></g>
+<g class="chip" style="animation-delay:1.42s"><rect x="634.4" y="395" width="43.6" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="656.2" y="413" class="chiptxt" text-anchor="middle">RAG</text></g>
+<g class="chip" style="animation-delay:1.47s"><rect x="686.0" y="395" width="101.2" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="736.6" y="413" class="chiptxt" text-anchor="middle">Multi-Agent</text></g>
+<g class="chip" style="animation-delay:1.52s"><rect x="795.2" y="395" width="72.4" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="831.4" y="413" class="chiptxt" text-anchor="middle">FastAPI</text></g>
+<g class="chip" style="animation-delay:1.58s"><rect x="386.0" y="430" width="94.0" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="433.0" y="448" class="chiptxt" text-anchor="middle">TypeScript</text></g>
+<g class="chip" style="animation-delay:1.64s"><rect x="488.0" y="430" width="58.0" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="517.0" y="448" class="chiptxt" text-anchor="middle">React</text></g>
+<g class="chip" style="animation-delay:1.69s"><rect x="554.0" y="430" width="58.0" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="583.0" y="448" class="chiptxt" text-anchor="middle">Swift</text></g>
+<g class="chip" style="animation-delay:1.75s"><rect x="620.0" y="430" width="65.2" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="652.6" y="448" class="chiptxt" text-anchor="middle">Docker</text></g>
+<g class="chip" style="animation-delay:1.80s"><rect x="693.2" y="430" width="43.6" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="715.0" y="448" class="chiptxt" text-anchor="middle">AWS</text></g>
+<g class="chip" style="animation-delay:1.85s"><rect x="744.8" y="430" width="43.6" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="766.6" y="448" class="chiptxt" text-anchor="middle">SQL</text></g>
+<g class="chip" style="animation-delay:1.91s"><rect x="796.4" y="430" width="58.0" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="825.4" y="448" class="chiptxt" text-anchor="middle">Neo4j</text></g>
+<g class="chip" style="animation-delay:1.96s"><rect x="386.0" y="465" width="94.0" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="433.0" y="483" class="chiptxt" text-anchor="middle">Databricks</text></g>
+<g class="chip" style="animation-delay:2.02s"><rect x="488.0" y="465" width="101.2" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="538.6" y="483" class="chiptxt" text-anchor="middle">Monte Carlo</text></g>
+<g class="chip" style="animation-delay:2.08s"><rect x="597.2" y="465" width="94.0" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="644.2" y="483" class="chiptxt" text-anchor="middle">Statistics</text></g>
+<g class="chip" style="animation-delay:2.13s"><rect x="699.2" y="465" width="108.4" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="753.4" y="483" class="chiptxt" text-anchor="middle">scikit-learn</text></g>
+<g class="chip" style="animation-delay:2.19s"><rect x="815.6" y="465" width="43.6" height="27" rx="13.5" fill="#0f1a2e" stroke="#25374f"/><text x="837.4" y="483" class="chiptxt" text-anchor="middle">Git</text></g>
+<g class="rv" style="animation-delay:1.75s"><circle cx="404" cy="518" r="15" fill="#0f1a2e" stroke="#25374f" class="orb" style="animation-delay:0.0s"/><text x="404" y="522" class="ico" text-anchor="middle">G</text><text x="404" y="548" class="sociallbl" text-anchor="middle">GitHub</text></g>
+<g class="rv" style="animation-delay:1.84s"><circle cx="482" cy="518" r="15" fill="#0f1a2e" stroke="#25374f" class="orb" style="animation-delay:0.4s"/><text x="482" y="522" class="ico" text-anchor="middle">L</text><text x="482" y="548" class="sociallbl" text-anchor="middle">LinkedIn</text></g>
+<g class="rv" style="animation-delay:1.93s"><circle cx="560" cy="518" r="15" fill="#0f1a2e" stroke="#25374f" class="orb" style="animation-delay:0.8s"/><text x="560" y="522" class="ico" text-anchor="middle">B</text><text x="560" y="548" class="sociallbl" text-anchor="middle">Basalt</text></g>
+<g class="rv" style="animation-delay:2.02s"><circle cx="638" cy="518" r="15" fill="#0f1a2e" stroke="#25374f" class="orb" style="animation-delay:1.2000000000000002s"/><text x="638" y="522" class="ico" text-anchor="middle">E</text><text x="638" y="548" class="sociallbl" text-anchor="middle">Email</text></g>
+</svg>
